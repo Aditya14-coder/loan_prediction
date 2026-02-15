@@ -11,8 +11,8 @@ import pandas as pd
 import joblib
 
 # Load trained model and encoders
-model = joblib.load("")
-encoders = joblib.load("loan_encoders.pkl")   # dictionary of label encoders
+model = joblib.load("Loan_prediction_model.pkl")
+encoders = joblib.load("encoder.pkl")   # dictionary of label encoders
 
 st.title("Loan Prediction App")
 
