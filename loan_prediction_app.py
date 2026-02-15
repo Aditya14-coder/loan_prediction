@@ -54,6 +54,7 @@ for col in encoders:
 
 # Predict button
 if st.button("Predict Loan Status"):
+    st.write("Encoded input for prediction:", df)
     prediction = model.predict(df)
     result = "Approved " if prediction[0] == 1 else "Rejected "
     st.success(f"Loan Prediction: {result}")
